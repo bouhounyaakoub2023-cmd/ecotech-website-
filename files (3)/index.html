@@ -1,305 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="theme-color" content="#091c1a">
-  <meta name="robots" content="index, follow">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <link rel="apple-touch-icon" href="media/club/logo of the web site.png">
-  
-  <!-- Preload fonts for performance -->
-  <link rel="preload" href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuDyfAZ9hiA.woff2" as="font" type="font/woff2" crossorigin>
-  
-  <!-- SEO & Social Meta Tags -->
-  <title>EcoTech Club — National Polytechnic School of Constantine</title>
-  <meta name="description" content="EcoTech Club is an official student club at ENPC, bridging environmental science and cutting-edge technology. Building a sustainable future through innovation."/>
-  <link rel="canonical" href="https://ecotech-enpc.dz/"/>
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ecotech-enpc.dz/">
-  <meta property="og:title" content="EcoTech Club — National Polytechnic School of Constantine">
-  <meta property="og:description" content="Bridging environmental science and cutting-edge technology at ENPC.">
-  <meta property="og:image" content="media/club/heroImage.jpg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoTech Club — Ecology × AI × Innovation</title>
+  <meta name="description" content="EcoTech Club is a multidisciplinary university community building AI-powered solutions for sustainability through projects, hackathons, and research." />
+  <meta name="theme-color" content="#071814" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://ecotech-enpc.dz/">
-  <meta property="twitter:title" content="EcoTech Club — National Polytechnic School of Constantine">
-  <meta property="twitter:description" content="Bridging environmental science and cutting-edge technology at ENPC.">
-  <meta property="twitter:image" content="media/club/heroImage.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'"/>
-  <noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
-  </noscript>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
   <script src="config.js"></script>
 </head>
 <body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-<a href="#hero" class="skip-link">Skip to main content</a>
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="EcoTech Club home">
+        <img src="media/club/logo of the web site.png" alt="EcoTech Club logo" data-config="global.logo" />
+        <span>
+          <strong class="brand-name">EcoTech Club</strong>
+          <small class="brand-sub">National Polytechnic School of Constantine</small>
+        </span>
+      </a>
 
-<div class="uni-bar">
-  <div class="uni-bar-inner">
-    <div class="uni-bar-left">
-      <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
-      National Polytechnic School of Constantine — Club Officiel Étudiant
+      <button class="menu-toggle" id="menuToggle" aria-controls="mobileMenu" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#partners">Partners</a></li>
+      </ul>
+
+      <a href="#join" class="btn btn-primary">Join Us</a>
+    </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#events">Events</a>
+      <a href="#team">Team</a>
+      <a href="#partners">Partners</a>
+      <a href="#join" class="btn btn-primary">Join Us</a>
     </div>
-    <div class="uni-bar-right">
-      <a href="mailto:ecotech.club2026@gmail.com">ecotech.club2026@gmail.com</a>
-      <span class="uni-sep">|</span>
-      <span>Constantine, Algeria</span>
-    </div>
-  </div>
-</div>
+  </header>
 
-<!-- ═══════════════════════════════════════════
-     NAVBAR
-════════════════════════════════════════════ -->
-<nav class="navbar" id="navbar">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-brand">
-      <div class="nav-logo">
-        <img src="media/club/logo of the web site.png" alt="EcoTech Logo" width="40" height="40" data-config="global.logo">
-      </div>
-      <div class="nav-brand-text">
-        <span class="brand-name">EcoTech Club</span>
-        <span class="brand-sub">National Polytechnic School of Constantine</span>
-      </div>
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="departments.html">Departments</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="team.html">Our Team</a></li>
-    </ul>
-    <a href="join.html" class="nav-cta">Join Us</a>
-    <button class="nav-hamburger" aria-label="Open menu">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</nav>
-
-<!-- Mobile menu -->
-<div class="mobile-menu" id="mobileMenu">
-  <button class="mobile-close" id="mobileClose">✕</button>
-  <a href="index.html">Home</a>
-  <a href="departments.html">Departments</a>
-  <a href="events.html">Events</a>
-  <a href="team.html">Team</a>
-  <a href="join.html" class="mobile-cta">Join Us</a>
-</div>
-
-<main>
-
-<!-- ═══════════════════════════════════════════
-     HERO
-════════════════════════════════════════════ -->
-<section class="hero" id="hero" aria-label="EcoTech Hero Section">
-  <div class="hero-cadre">
-    <h1 class="hero-title-overlap reveal" data-config="home.hero.title">Living in harmony with nature</h1>
-    <div class="hero-img-overlap reveal delay-1">
-      <img src="media/club/heroImage.jpg" alt="A beautiful sustainable landscape representing EcoTech Club mission" data-config="home.hero.image" width="500" height="500" fetchpriority="high">
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     ABOUT / WHO WE ARE
-════════════════════════════════════════════ -->
-<section class="section" id="about">
-  <div class="container">
-    <div class="section-label reveal" data-config="home.about.label">01 — Who We Are</div>
-    <div class="about-grid">
-      <div class="about-text reveal-left">
-        <h2 data-config="home.about.title">More than a club.<br>A <span class="teal">movement.</span></h2>
-        <p data-config="home.about.description1">EcoTech Club is an official student-led organization at the National Polytechnic School of Constantine, dedicated to harnessing the power of technology in service of environmental sustainability.</p>
-        <p data-config="home.about.description2">We bring together passionate students from engineering, computer science, biology, and design to collaborate on real-world environmental challenges — from AI-powered climate monitoring to robotics for precision agriculture.</p>
-        <div class="about-stats">
-          <div class="astat"><span class="astat-num" data-target="40" data-suffix="+">0+</span><span class="astat-lbl">Members</span></div>
-          <div class="astat"><span class="astat-num" data-target="3">0</span><span class="astat-lbl">Events</span></div>
-          <div class="astat"><span class="astat-num" data-target="1">0</span><span class="astat-lbl">Years Active</span></div>
-        </div>
-      </div>
-      <div class="about-images reveal-right">
-        <div class="img-bento">
-          <div class="img-bento-large">
-            <img src="media/club/heroImage2.jpg" alt="Students collaborating"/>
-            <div class="img-caption">Members at EcoTech Opening Day 2026</div>
+  <main id="main-content">
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Ecology × AI × Innovation</p>
+          <h1 data-config="home.hero.title">Engineering a sustainable future with intelligent technology.</h1>
+          <p class="hero-description" data-config="home.hero.description">
+            EcoTech Club is a multidisciplinary student lab where environmental ambition meets advanced technology.
+          </p>
+          <div class="hero-cta">
+            <a href="#join" class="btn btn-primary" data-config="home.hero.primaryCTA.label">Join the Club</a>
+            <a href="#projects" class="btn btn-ghost" data-config="home.hero.secondaryCTA.label">Discover Projects</a>
           </div>
-          <div class="img-bento-small">
-            <img src="media/club/heroImage.jpg" alt="Lab research"/>
-          </div>
-          <div class="img-bento-small">
-            <img src="media/club/heroImage3.jpg" alt="Technology"/>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     PILLARS / VALUES — image bento style
-════════════════════════════════════════════ -->
-<section class="section section-dark" id="pillars">
-  <div class="container">
-    <div class="section-label reveal">02 — Our Pillars</div>
-    <div class="pillars-header reveal">
-      <h2 data-config="home.pillars.title">Our pillars,<br>your impact</h2>
-      <p data-config="home.pillars.description">Meet the four core values that shape our club — where tech, sustainability, and community come together to spark real change.</p>
-    </div>
-    <div class="pillars-bento reveal">
-      <div class="pillar-card pillar-text-card">
-        <h3>Tech for good</h3>
-        <p>We blend nature and innovation, creating solutions that make a difference for people and the planet.</p>
-      </div>
-      <div class="pillar-card pillar-text-card">
-        <h3>Planet-first mindset</h3>
-        <p>Every step we take is guided by eco-conscious choices, ensuring our actions help build a greener world.</p>
-      </div>
-      <div class="pillar-card pillar-img-card">
-        <img src="media/club/heroImage.jpg" alt="Pillar 1"/>
-        <div class="pillar-img-label">Learning & Development</div>
-      </div>
-      <div class="pillar-card pillar-img-card">
-        <img src="media/club/heroImage2.jpg" alt="Pillar 2"/>
-        <div class="pillar-img-label">Collaboration</div>
-      </div>
-      <div class="pillar-card pillar-text-card pillar-wide">
-        <h3>Open collaboration</h3>
-        <p>We believe the best ideas emerge from diverse minds. Every student, every skill, every background is an asset to our mission.</p>
-      </div>
-      <div class="pillar-card pillar-text-card">
-        <h3>Measurable impact</h3>
-        <p>From campus initiatives to national forums, we track the real difference we make in our communities.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     VISION & MISSION
-════════════════════════════════════════════ -->
-<section class="section" id="vision">
-  <div class="container">
-    <div class="section-label reveal">03 — Vision & Mission</div>
-    <div class="vm-grid">
-      <div class="vm-img reveal-left">
-        <img src="media/club/heroImage3.jpg" alt="Solar panels and technology"/>
-        <div class="vm-img-overlay">
-          <div class="vm-quote" data-config="home.visionMission.quote">"Innovation and ecology are not opposites — they are partners."</div>
-        </div>
-      </div>
-      <div class="vm-cards reveal-right">
-        <div class="vm-card">
-          <div class="vm-card-num">01</div>
-          <h3 data-config="home.visionMission.valuesTitle">Our Vision</h3>
-          <p data-config="home.visionMission.valuesText">To empower every student to become a catalyst for environmental change through technology.</p>
-        </div>
-        <div class="vm-card vm-card-accent">
-          <div class="vm-card-num">02</div>
-          <h3 data-config="home.visionMission.missionTitle">Our Mission</h3>
-          <p data-config="home.visionMission.missionText">To build a vibrant ecosystem where technical expertise serves ecological preservation, fostering a new generation of conscious engineers and innovators.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══════════════════════════════════════════
-     MEMBER STORIES
-════════════════════════════════════════════ -->
-<section class="section" id="stories">
-  <div class="container">
-    <div class="section-label reveal">Member Stories & Experiences</div>
-    <div class="stories-header reveal">
-      <h2>Real voices.<br>Real impact.</h2>
-    </div>
-    <div class="stories-grid reveal">
-      <!-- Dynamically populated from config.js -->
-    </div>
-  </div>
-</section>
-
-<section class="cta-banner">
-  <img src="media/club/heroImage2.jpg" alt="Students" class="cta-bg"/>
-  <div class="cta-overlay"></div>
-  <div class="cta-content reveal">
-    <span class="eyebrow" data-config="home.ctaBanner.eyebrow">Want to be on this page?</span>
-    <h2 data-config="home.ctaBanner.title">Join the<br>EcoTech family</h2>
-    <p data-config="home.ctaBanner.description">We're always looking for passionate students to join our growing team of eco-innovators at ENPC.</p>
-    <a href="join.html" class="btn-primary" data-config="home.ctaBanner.button.label">Apply Now →</a>
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <div class="footer-top">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col footer-col-brand">
-          <div class="footer-logo">
-            <img src="media/club/logo of the web site.png" alt="EcoTech Logo" width="36" height="36" data-config="global.logo">
-            <div>
-              <div class="footer-brand-name">EcoTech Club</div>
-              <div class="footer-brand-sub">National Polytechnic School of Constantine</div>
-            </div>
-          </div>
-          <p class="footer-desc">An official student club at the intersection of environmental science and cutting-edge technology — building solutions for a sustainable future, one project at a time.</p>
-          <div class="footer-socials">
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn instagram-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn linkedin-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn facebook-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
-            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn github-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37a3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg></a>
-          </div>
-        </div>
-        <div class="footer-col">
-          <h4>Navigation</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="departments.html">Departments</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="team.html">Our Team</a></li>
-            <li><a href="join.html">Join Us</a></li>
+          <ul class="hero-metrics">
+            <li><strong>40+</strong><span>Members</span></li>
+            <li><strong>12</strong><span>Projects</span></li>
+            <li><strong>3</strong><span>Major Events</span></li>
           </ul>
         </div>
-        <div class="footer-col">
-          <h4>Departments</h4>
-          <ul>
-            <li><a href="departments.html">SensibiliGreen Tech</a></li>
-            <li><a href="departments.html">Environment & Research</a></li>
-            <li><a href="departments.html">Media & Design</a></li>
-            <li><a href="departments.html">Projects & Events</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <ul class="footer-contact-list">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><a href="mailto:ecotech.club2026@gmail.com">ecotech.club2026@gmail.com</a></li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>ENPC, Constantine, Algeria</span></li>
-          </ul>
+        <div class="hero-visual reveal-right" aria-hidden="true">
+          <div class="orb orb-a"></div>
+          <div class="orb orb-b"></div>
+          <div class="visual-card">
+            <p>AI-powered eco monitoring</p>
+            <img src="media/club/heroImage.jpg" alt="Students working on EcoTech project" />
+          </div>
+          <div class="visual-card small">
+            <p>Smart sustainability systems</p>
+            <img src="media/club/heroImage2.jpg" alt="EcoTech sustainability workshop" />
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="footer-bottom-inner">
-        <span>© 2026 EcoTech Club — National Polytechnic School of Constantine. All rights reserved.</span>
-        <span>Created by <strong>YAAKOUB BOUHOUN</strong></span>
-      </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<script src="script.js"></script>
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">About EcoTech</p>
+          <h2>Building innovators for a greener world.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <h3>Mission</h3>
+            <p data-config="home.visionMission.missionText">To build a vibrant ecosystem where technical expertise serves ecological preservation.</p>
+          </article>
+          <article class="glass-card reveal delay-1">
+            <h3>Vision</h3>
+            <p data-config="home.visionMission.quote">Empower every student to become a catalyst for environmental change through technology.</p>
+          </article>
+          <article class="glass-card reveal delay-2">
+            <h3>Values</h3>
+            <p data-config="home.visionMission.valuesText">We are grounded in collaboration, innovation, and measurable impact for society and planet.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Projects</p>
+          <h2>Real projects at the intersection of AI and sustainability.</h2>
+        </div>
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Rendered from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="events">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Events</p>
+          <h2>Hackathons, workshops, and research forums.</h2>
+        </div>
+        <div class="event-filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+          <button class="filter-btn" data-filter="past">Past</button>
+        </div>
+        <div class="events-grid" id="eventsGrid">
+          <!-- Rendered from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Team</p>
+          <h2>The students driving EcoTech forward.</h2>
+        </div>
+        <div class="team-grid" id="teamGrid">
+          <!-- Rendered from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="partners">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Collaborators</p>
+          <h2>Trusted by research, academic, and startup ecosystems.</h2>
+        </div>
+        <div class="partners-grid" id="partnersGrid">
+          <!-- Rendered from config.js -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="join">
+      <div class="container cta-box reveal">
+        <h2>Join EcoTech Club and build climate-positive innovation.</h2>
+        <p>Open to all motivated students ready to learn, create, and contribute to sustainable technology.</p>
+        <a href="join.html" class="btn btn-primary">Apply to Join</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>EcoTech Club</h3>
+        <p class="footer-text">A university innovation community at ENPC working on sustainability, AI, and real-world ecological impact.</p>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#team">Team</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ecotech.club2026@gmail.com" data-config="global.contactEmail">ecotech.club2026@gmail.com</a></li>
+          <li><span data-config="global.location">ENPC, Constantine, Algeria</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Social</h4>
+        <ul>
+          <li><a class="instagram-link" href="#" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li><a class="linkedin-link" href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a class="facebook-link" href="#" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li><a class="github-link" href="#" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span data-config="global.footer.copyright">© 2026 EcoTech Club — All rights reserved.</span>
+      <span data-config="global.footer.credits">Created by YAAKOUB BOUHOUN</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
